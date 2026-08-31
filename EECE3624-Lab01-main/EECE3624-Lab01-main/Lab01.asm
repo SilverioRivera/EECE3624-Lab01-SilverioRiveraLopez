@@ -4,7 +4,7 @@
  *  Lab Name: Ready, Set, Go!
  *    Author: Dr. Greg Nordstrom
  *   Created: 1/11/2021
- *  Modified: 
+ *  Modified: Silverio Rivera-Lopez
  * Processor: ATmega128A (on the ReadyAVR board)
  *
  * This program verifies the operation of the ReadyAVR-64/128 board.
@@ -87,7 +87,7 @@ Display_Welcome:
     ; send char to terminal
     rcall USART_Transmit
 
-    rjmp GetNextChar
+0    rjmp GetNextChar
 
     DisplayDone:
 ret
